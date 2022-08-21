@@ -1,0 +1,67 @@
+.assets__leaderboard
+  width: 1920px
+  height: 1080px
+  background-image: url(poker/assets/bg.jpg)
+  display: flex
+  justify-content: center
+  align-items: center
+  font-family: 'TT Norms Pro', sans-serif
+  font-weight: 700
+  main
+    display: flex
+    flex-direction: column
+    width: 1028px
+  .header
+    display: flex
+    align-items: center
+    background: linear-gradient(0, #C7C8C7 7.08%, #F8F9F9 91.98%)
+    padding: 17px 23px 16px
+  .logo-wrapper
+    margin-right: 10px
+  .title
+    text-transform: uppercase
+    font-size: 64px
+    line-height: 77px
+  .player-list
+    padding: 15px 5px 20px
+    background-color: #333
+    color: #fff
+    font-size: 34px
+    &__row
+      display: flex
+      width: 100%
+      padding: 8px 0 5px
+      &:not(:nth-last-child(1))
+        border-bottom: 1px solid #939393
+  .place
+    width: 138px
+    display: flex
+    justify-content: flex-end
+    align-items: first baseline
+    &__ordinal-end
+      font-size: 24px
+      width: 37px
+      display: inline-block
+      text-align: left
+  .full_name
+    width: 514px
+    padding-left: 15px
+  .place,
+  .full_name
+    font-weight: 500
+  .pool
+    flex: 1
+    text-align: center
+  .subscription
+    background: linear-gradient(0, #C7C8C7 -39.62%, #F8F9F9 100%)
+    text-align: center
+    line-height: 41px
+    font-size: 26px
+  .footer
+    height: 143px
+    width: 100%
+    background-image: url(poker/assets/shaded.jpg)
+    display: flex
+    justify-content: center
+    align-items: center
+    overflow: hidden

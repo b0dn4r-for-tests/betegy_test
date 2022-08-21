@@ -1,0 +1,9 @@
+google:
+  auth_keys:
+    project_id:
+    private_key:
+    client_email:
+  poker:
+    assets:
+      tournaments:
+        doc_id: 18pIMFkv3wcy7fXv7hNpFRfCOBff7hd6TrH9jvqqe6KQ

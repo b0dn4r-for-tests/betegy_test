@@ -1,0 +1,23 @@
+.assets__leaderboard
+  %main
+    .header
+      = link_to '#', class: 'logo-wrapper' do
+        = image_tag 'poker/assets/logo.png'
+      %span.title
+        = "##{@tournament.number}: #{@tournament.title}"
+    %ul.player-list
+      - @tournament.players_tournaments.each do |player|
+        %li.player-list__row
+          .place
+            = player.place
+            %span.place__ordinal-end
+              = player.place.ordinalize.upcase.gsub(/\d/, '')
+          .full_name
+            = player.full_name
+          .pool
+            = "$#{number_with_delimiter(player.prize_pool)}"
+    .subscription
+      = "#{@tournament.entrants} ENTRIES - $#{number_with_delimiter(@tournament.prize_pool)} PRIZE POOL"
+    .footer
+      = link_to '#' do
+        = image_tag 'poker/assets/sponsor.png'

@@ -1,0 +1,9 @@
+google:
+  auth_keys:
+    project_id:
+    private_key:
+    client_email:
+  poker:
+    assets:
+      tournaments:
+        doc_id:
